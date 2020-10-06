@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageviewwbaihathot"
+        android:scaleType="fitXY"
+        android:layout_margin="2dp"
+
+        android:layout_width="77dp"
+        android:layout_height="77dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:textColor="#03A9F4"
+        android:textSize="19sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/imageviewwbaihathot"
+        android:layout_marginTop="4dp"
+        android:id="@+id/textviewtenbaihathot"/>
+    <TextView
+        android:text=" Singer"
+        android:textColor="#259988"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/imageviewwbaihathot"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textviewtenbaihathot"
+        android:id="@+id/textviewcasibaihathot"/>
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginRight="11dp"
+        android:src="@drawable/iconlove"
+        android:id="@+id/imageviewluotthich"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+
+
+
+
+
+
+</RelativeLayout>

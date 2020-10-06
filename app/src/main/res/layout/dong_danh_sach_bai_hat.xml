@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="1"
+            android:id="@+id/textviewdanhsachindex"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="song name"
+            android:textColor="#030303"
+            android:layout_toRightOf="@+id/textviewdanhsachindex"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/textviewtenbaihat"
+            android:maxWidth="250dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewtencasi"
+                android:layout_below="@id/textviewtenbaihat"
+                android:layout_toRightOf="@id/textviewdanhsachindex"
+                android:text="singer"
+                android:textColor="#979797"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageviewluotthichdanhsachbaihat"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/iconlove"
+            android:layout_centerVertical="true"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

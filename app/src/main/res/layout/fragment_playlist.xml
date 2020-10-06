@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#673AB7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/fragment_playlist"
+    >
+    <TextView
+        android:textColor="#1A1717"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/textviewtitleplaylist"
+        android:text="noname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listviewplaylist"
+        android:layout_below="@id/textviewtitleplaylist"></ListView>
+    <TextView
+        android:text="more playlist"
+        android:textSize="14sp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/iconmoreplaylist"
+        android:paddingLeft="5dp"
+        android:layout_below="@id/listviewplaylist"
+        android:id="@+id/textviewviewmoreplaylist"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
