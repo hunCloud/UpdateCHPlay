@@ -13,9 +13,9 @@ public class Playlist implements Serializable {
     @SerializedName("Ten")
     @Expose
     private String ten;
-    @SerializedName("HinhPlayList")
+    @SerializedName("HinhPlaylist")
     @Expose
-    private String hinhPlayList;
+    private String hinhPlaylist;
     @SerializedName("Icon")
     @Expose
     private String icon;
@@ -36,12 +36,12 @@ public class Playlist implements Serializable {
         this.ten = ten;
     }
 
-    public String getHinhPlayList() {
-        return hinhPlayList;
+    public String getHinhPlaylist() {
+        return hinhPlaylist;
     }
 
-    public void setHinhPlayList(String hinhPlayList) {
-        this.hinhPlayList = hinhPlayList;
+    public void setHinhPlaylist(String hinhPlaylist) {
+        this.hinhPlaylist = hinhPlaylist;
     }
 
     public String getIcon() {

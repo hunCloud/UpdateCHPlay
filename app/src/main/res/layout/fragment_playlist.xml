@@ -13,28 +13,31 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:id="@+id/textviewtitleplaylist"
-        android:text="noname"
+        android:text="Hot playlist in month"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/listviewplaylist"
-        android:layout_below="@id/textviewtitleplaylist"></ListView>
-    <TextView
-        android:text="more playlist"
-        android:textSize="14sp"
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/iconmoreplaylist"
-        android:paddingLeft="5dp"
-        android:layout_below="@id/listviewplaylist"
-        android:id="@+id/textviewviewmoreplaylist"
-        android:background="#fff"
-        android:layout_marginTop="10dp"
-        android:paddingTop="10dp"
-        android:layout_marginBottom="8dp"
-        android:textColor="#000"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="567dp"
+        android:layout_below="@id/textviewtitleplaylist"
+        android:layout_marginTop="-11dp"></ListView>
+
+    <TextView
+
+        android:id="@+id/textviewviewmoreplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/listviewplaylist"
+        android:layout_marginTop="-15dp"
+        android:background="#00BCD4"
+        android:drawableLeft="@drawable/iconmoreplaylist"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="More playlist"
+        android:textColor="#000"
+        android:textSize="14sp" />
 
 </RelativeLayout>

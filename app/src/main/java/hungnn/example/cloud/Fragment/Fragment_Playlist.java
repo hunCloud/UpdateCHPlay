@@ -3,6 +3,7 @@ package hungnn.example.cloud.Fragment;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,8 +44,6 @@ public class Fragment_Playlist extends Fragment {
     lvplaylist=view.findViewById(R.id.listviewplaylist);
     txttitleplaylist=view.findViewById(R.id.textviewtitleplaylist);
     txtviewxemthemplaylist=view.findViewById(R.id.textviewviewmoreplaylist);
-
-
         GetData();
         txtviewxemthemplaylist.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,10 +62,10 @@ public class Fragment_Playlist extends Fragment {
         callback.enqueue(new Callback<List<Playlist>>() {
             @Override
             public void onResponse(Call<List<Playlist>> call, Response<List<Playlist>> response) {
-                final ArrayList<Playlist> mangplaylist= (ArrayList<Playlist>) response.body();
-//             Log.d("SSS", mangplaylist.get(0).getTen());
+                mangplaylist= (ArrayList<Playlist>) response.body();
+             //Log.d("SSS", mangplaylist.get(0).getTen());
             playlistAdapter=new PlaylistAdapter(getActivity(), android.R.layout.simple_list_item_1, mangplaylist);
-            lvplaylist.setAdapter(playlistAdapter);
+                lvplaylist.setAdapter(playlistAdapter);
             setListViewHeightBasedOnChildren(lvplaylist);
             lvplaylist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override

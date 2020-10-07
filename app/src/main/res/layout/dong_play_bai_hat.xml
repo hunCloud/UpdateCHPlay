@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/textviewplaynhacindex"
             android:layout_margin="10dp"
-            android:textColor="#ffff"
+            android:textColor="#D500F9"
             android:text="1"
             android:textSize="17sp"/>
         <TextView
@@ -24,19 +24,25 @@
             android:maxWidth="250dp"
             android:singleLine="true"
             android:text="song name"
-            android:textColor="#ffff"
+            android:textColor="#00E676"
             android:textSize="17sp"/>
+
         <TextView
-            android:textSize="12sp"
-            android:textColor="#ffff"
-            android:text="single name"
-            android:singleLine="true"
-            android:ellipsize="end"
-            android:layout_marginLeft="10dp"
-            android:layout_below="@id/textviewplaynhactenbaihat"
             android:id="@+id/textviewplaynhactencasi"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="26dp"
+            android:layout_below="@id/textviewplaynhactenbaihat"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="181dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="single name"
+            android:textColor="#D1C53A"
+            android:textSize="12sp" />
 
 
     </RelativeLayout>

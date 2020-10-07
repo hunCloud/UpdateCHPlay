@@ -44,8 +44,8 @@ import retrofit2.Response;
 public class DanhsachbaihatActivity extends AppCompatActivity {
     Quangcao quangcao;
     ImageView imgdanhsachcakhuc;
-    // fix image to create another music to display
 
+    View viewBackgroundPlaylist;// fix image to create another music to display
     CoordinatorLayout coordinatorLayout;
     CollapsingToolbarLayout collapsingToolbarLayout;
     Toolbar toolbar;
@@ -74,7 +74,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
             GetDataQuangcao(quangcao.getIdQuangCao());
         }
         if(playlist!=null&&!playlist.getTen().equals("")){
-            setValueInView(playlist.getTen(), playlist.getHinhPlayList());
+            setValueInView(playlist.getTen(), playlist.getHinhPlaylist());
             GetDataPlaylist(playlist.getIdPlaylist());
         }
         if(theLoai!=null &&!theLoai.getTenTheLoai().equals("")){
@@ -214,6 +214,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
         recyclerViewdanhsachbaihat=findViewById(R.id.recycleviewdanhsachbaihat);
         floatingActionButton=findViewById(R.id.floatingactionbutton);
         imgdanhsachcakhuc=findViewById(R.id.imageviewdanhsachcakhuc);
+        viewBackgroundPlaylist=findViewById(R.id.viewbackgroundplaylist); // fill image get from server and set it in view in activity_danhsachbaihat.xml
     }
 
     private void DataIntent() {

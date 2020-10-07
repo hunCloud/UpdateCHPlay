@@ -50,6 +50,7 @@ public class Fragment_Tim_Kiem extends Fragment {
         return view;
     }
 
+    // fix error here
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.search_view, menu);

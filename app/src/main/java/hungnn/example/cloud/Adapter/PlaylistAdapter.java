@@ -26,35 +26,28 @@ public class PlaylistAdapter extends ArrayAdapter<Playlist> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        ViewHolder viewHolder=null;
-        if(convertView==null){
-            LayoutInflater inflater=LayoutInflater.from(getContext());
-            convertView=inflater.inflate(R.layout.dong_playlist, null);
-            
-            viewHolder=new ViewHolder();
-            viewHolder.txttenplaylist=convertView.findViewById(R.id.textviewtenplaylist);
-            viewHolder.imgplaylist=convertView.findViewById(R.id.imageviewplaylist);
-            viewHolder.imgbackgound=convertView.findViewById(R.id.imageviewbackgroundplaylist);
+        ViewHolder viewHolder = null;
+        if (convertView == null) {
+            LayoutInflater inflater = LayoutInflater.from(getContext());
+            convertView = inflater.inflate(R.layout.dong_playlist, null);
 
-
+            viewHolder = new ViewHolder();
+            // delete 1 view, just 2 views in a item
+            viewHolder.txttenplaylist = convertView.findViewById(R.id.textviewtenplaylist);
+            viewHolder.imgplaylist = convertView.findViewById(R.id.imageviewplaylist);
+            viewHolder.imgbackgound = convertView.findViewById(R.id.imageviewbackgroundplaylist);
             convertView.setTag(viewHolder);
-
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
         }
-        else
-            viewHolder= (ViewHolder) convertView.getTag();
+            Playlist playlist = getItem(position);
+        Picasso.with(getContext()).load(playlist.getHinhPlaylist()).into(viewHolder.imgbackgound);
+            Picasso.with(getContext()).load(playlist.getIcon()).into(viewHolder.imgplaylist);
+            viewHolder.txttenplaylist.setText(playlist.getTen());
 
-        Playlist playlist=getItem(position);
-        Picasso.with(getContext()).load(playlist.getHinhPlayList()).into(viewHolder.imgbackgound);
-        Picasso.with(getContext()).load(playlist.getIcon()).into(viewHolder.imgplaylist);
-        viewHolder.txttenplaylist.setText(playlist.getTen());
+            return convertView;
+        }
 
-        return  convertView;
-
-
-
-
-
-    }
 
     class ViewHolder{
         TextView txttenplaylist;

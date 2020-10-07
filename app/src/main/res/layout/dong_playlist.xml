@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageButton
+
+    <ImageView
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
@@ -11,39 +12,39 @@
 
         android:layout_width="match_parent"
         android:layout_height="110dp"/>
-    <View
-        android:background="@drawable/custom_background_banner"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"/>
+
     <ImageView
         android:id="@+id/imageviewplaylist"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignBottom="@id/imageviewbackgroundplaylist"
         android:layout_marginLeft="15dp"
         android:layout_marginBottom="10dp"
         android:elevation="6dp"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY" />
 
     <TextView
-        android:textSize="13sp"
-        android:text="hit songs"
-
-        android:layout_toRightOf="@id/imageviewbackgroundplaylist"
-        android:layout_marginLeft="13dp"
-        android:textStyle="bold"
-        android:textColor="#F50978"
         android:id="@+id/textviewtenplaylist"
-        android:maxLines="1"
-        android:layout_marginBottom="5dp"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageviewbackgroundplaylist"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="-328dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="283dp"
         android:layout_marginRight="50dp"
+
+        android:layout_marginBottom="9dp"
+        android:layout_toEndOf="@id/imageviewplaylist"
+        android:layout_toRightOf="@id/imageviewbackgroundplaylist"
         android:ellipsize="end"
+        android:maxLines="1"
+        android:text="hit songs"
+        android:textColor="#F50978"
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
-
-</RelativeLayout>
+</FrameLayout>

@@ -41,7 +41,7 @@ public class DanhsachcacplaylistAdapter extends RecyclerView.Adapter<Danhsachcac
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Playlist playlist=mangplaylist.get(position);
 
-        Picasso.with(context).load(playlist.getHinhPlayList()).into(holder.imghinhnen);
+        Picasso.with(context).load(playlist.getHinhPlaylist()).into(holder.imghinhnen);
         holder.txttenplaylist.setText(playlist.getTen());
     }
 
