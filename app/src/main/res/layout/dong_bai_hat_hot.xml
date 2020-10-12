@@ -21,8 +21,8 @@
         android:layout_marginTop="4dp"
         android:id="@+id/textviewtenbaihathot"/>
     <TextView
-        android:text=" Singer"
-        android:textColor="#259988"
+        android:text="@string/singer"
+        android:textColor="@color/textviewcasibaihathot"
         android:textSize="19sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

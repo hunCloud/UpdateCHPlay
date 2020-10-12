@@ -13,9 +13,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textColor="#000000"
+            android:textColor="@color/txt_fragment_bai_hat_thich_nhat"
             android:textSize="20sp"
-            android:text="may be u like"/>
+            android:text="@string/maybe_you"/>
 
 
     </RelativeLayout>

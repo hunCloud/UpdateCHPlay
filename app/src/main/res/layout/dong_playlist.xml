@@ -41,8 +41,8 @@
         android:layout_toRightOf="@id/imageviewbackgroundplaylist"
         android:ellipsize="end"
         android:maxLines="1"
-        android:text="hit songs"
-        android:textColor="#F50978"
+        android:text="@string/hit_songs"
+        android:textColor="@color/textviewtenplaylist"
         android:textSize="24dp"
         android:textStyle="bold" />
 

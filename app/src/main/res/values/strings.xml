@@ -1,3 +1,39 @@
 <resources>
+
+<!--Display-->
     <string name="app_name">Hung music</string>
+    <string name="hot_playlist">Hot playlists in month</string>
+    <string name="more_playlist">More playlists</string>
+    <string name="album_hot">Album hot</string>
+    <string name="subject_category">Subject and category</string>
+    <string name="all_albums">All album</string>
+
+    <string name="maybe_you">Maybe you like</string>
+    <string name="all_category">All category</string>
+    <string name="default_song">Is it a dream?</string>
+    <string name="time_begin">00:00</string>
+
+    <!--    TextView-->
+    <string name="view_more">View more</string>
+    <string name="more_album">More Album</string>
+    <string name="various_artists">Various artists</string>
+    <string name="singer">Singer</string>
+    <string name="sad_love">Sad love</string>
+    <string name="one">1</string>
+    <string name="hit_songs">Hit songs</string>
+    <string name="name_song">Song name</string>
+    <string name="singer_name">Singer name</string>
+    <string name="hot_songs_month">Hot songs in month</string>
+    <string name="welcome_songs">Welcome to the new songs of singer</string>
+
+
+
+    <!--    Button-->
+    <string name="home_page">HOME PAGE</string>
+    <string name="search">SEARCH</string>
+
+    <string name="playlist">Playlist</string>
+
+    <string name="invalid_song">Invalid song</string>
+
 </resources>

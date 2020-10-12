@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -11,8 +12,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/textviewplaynhacindex"
             android:layout_margin="10dp"
-            android:textColor="#D500F9"
-            android:text="1"
+            android:textColor="@color/textviewplaynhacindex"
+            android:text="@string/one"
             android:textSize="17sp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -23,8 +24,8 @@
             android:ellipsize="end"
             android:maxWidth="250dp"
             android:singleLine="true"
-            android:text="song name"
-            android:textColor="#00E676"
+            android:text="@string/name_song"
+            android:textColor="@color/textviewplaynhactenbaihat"
             android:textSize="17sp"/>
 
         <TextView
@@ -40,8 +41,8 @@
             android:layout_marginEnd="181dp"
             android:ellipsize="end"
             android:singleLine="true"
-            android:text="single name"
-            android:textColor="#D1C53A"
+            android:text="@string/singer_name"
+            android:textColor="@color/textviewplaynhactencasi"
             android:textSize="12sp" />
 
 

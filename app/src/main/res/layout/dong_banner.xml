@@ -26,7 +26,7 @@
             android:padding="2dp"/>
         <TextView
             android:typeface="sans"
-            android:text="Sad love"
+            android:text="@string/sad_love"
             android:textSize="17sp"
             android:textColor="#FFFFFF"
             android:layout_width="wrap_content"
@@ -44,10 +44,10 @@
             android:layout_marginTop="7dp">
             <TextView
                 android:id="@+id/textviewnoidung"
-                android:textColor="#E91E63"
+                android:textColor="@color/textviewnoidung"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome to come with the new songs of singer"
+                android:text="@string/welcome_songs"
                 android:maxLines="2"
                 android:layout_marginRight="40dp"
                 android:textSize="13sp"/>

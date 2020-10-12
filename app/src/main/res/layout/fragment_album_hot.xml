@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#E91E63"
+    android:background="@color/bg_fargment_album_hot"
     >
     <RelativeLayout
         android:padding="7dp"
@@ -16,18 +16,18 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#FFEB3B"
-            android:text="Album hot"
+            android:text="@string/album_hot"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <TextView
             android:id="@+id/textviewxemthemAlbum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#8BC34A"
+            android:textColor="@color/textviewxemthemAlbum"
             android:textSize="18sp"
             android:textStyle="italic"
             android:layout_alignParentRight="true"
-            android:text="More album"/>
+            android:text="@string/more_album"/>
 
 
     </RelativeLayout>

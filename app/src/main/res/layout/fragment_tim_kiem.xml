@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbarlayoutsearchbaihat"
-        android:background="#E91E63"
+        android:background="@color/bg_appbarlayoutsearchbaihat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -26,10 +26,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/textviewkhongcodulieu"
-        android:text="Invalid song"
+        android:text="@string/invalid_song"
         android:gravity="center"
         android:textSize="35sp"
-        android:textColor="#FF9800"
+        android:textColor="@color/textviewkhongcodulieu"
         android:visibility="gone"/>
 
 </RelativeLayout>

@@ -24,8 +24,8 @@
         android:ellipsize="end"
         android:maxWidth="200dp"
         android:gravity="left"
-        android:text="Hot songs in month"
-        android:textColor="#060606"
+        android:text="@string/hot_songs_month"
+        android:textColor="@color/textviewtendanhsachcacplaylist"
         android:textSize="15sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Various artists"
+        android:text="@string/various_artists"
         android:textSize="13sp"/>
 
 </LinearLayout>

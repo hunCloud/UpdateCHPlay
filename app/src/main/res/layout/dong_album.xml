@@ -23,7 +23,7 @@
         <TextView
             android:textSize="20sp"
             android:maxWidth="200dp"
-            android:text="is it dream?"
+            android:text="@string/default_song"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="1"
@@ -41,7 +41,7 @@
             android:id="@+id/textviewtencasialbum"
             android:ellipsize="end"
             android:textSize="20sp"
-            android:textColor="#702B2B"/>
+            android:textColor="@color/textviewtencasialbum"/>
 
 
     </LinearLayout>

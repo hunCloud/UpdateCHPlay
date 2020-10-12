@@ -7,24 +7,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="7dp"
-        android:background="#8BC34A"
+        android:background="@color/fragment_chude_theloai"
         android:id="@+id/relativechudetheloai">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textviewtitle"
-            android:textColor="#000000"
+            android:textColor="@color/textviewtitle"
             android:textStyle="bold"
             android:textSize="16sp"
-            android:text="Subject and Category"/>
+            android:text="@string/subject_category"/>
         <TextView
             android:id="@+id/textviewxemthem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:textColor="#913662"
+            android:textColor="@color/textviewxemthem"
             android:textSize="18sp"
-            android:text="View more"/>
+            android:text="@string/view_more"/>
     </RelativeLayout>
 
     <HorizontalScrollView

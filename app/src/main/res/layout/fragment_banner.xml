@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <androidx.viewpager.widget.ViewPager
-        android:background="#3F51B5"
+        android:background="@color/bg_fragment_banner"
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="180dp"

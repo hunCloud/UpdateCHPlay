@@ -21,10 +21,10 @@
         android:id="@+id/myTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabIndicatorColor="#E9F113"
+        app:tabIndicatorColor="@color/tabIndicatorColor"
         app:tabMode="fixed"
-        app:tabSelectedTextColor="#CAC21F"
-        app:tabTextColor="#000000"
+        app:tabSelectedTextColor="@color/tabSelectedTextColor"
+        app:tabTextColor="@color/tabTextColor"
         app:tabIndicatorHeight="2dp"
         android:background="@android:color/transparent"
         >
