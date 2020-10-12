@@ -45,7 +45,7 @@ public class Fragment_Tim_Kiem extends Fragment {
         recyclerViewsearchbaihat=view.findViewById(R.id.recycleviewsearchbaihat);
         txtkhongcodulieu=view.findViewById(R.id.textviewkhongcodulieu);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
-        toolbar.setTitle("Click search icon to find song.");
+        toolbar.setTitle("Click search icon to find a song.");
         setHasOptionsMenu(true);
         return view;
     }
