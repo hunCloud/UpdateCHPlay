@@ -40,9 +40,9 @@ public class AlbumAdapter  extends  RecyclerView.Adapter<AlbumAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
     Album album=mangalbum.get(position);
-    holder.txtcasialbum.setText(album.getTenCaSiAlbum());
+    holder.txtcasialbum.setText(album.getTencasiAlbum());
     holder.txttenalbum.setText(album.getTenAlbum());
-        Picasso.with(context).load(album.getHinhAlbum()).into(holder.imghinhalbum);
+        Picasso.with(context).load(album.getHinhanhAlbum()).into(holder.imghinhalbum);
     }
 
     @Override

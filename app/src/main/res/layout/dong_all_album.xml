@@ -15,8 +15,6 @@
             android:src="@drawable/ic_launcher_background"
             android:scaleType="centerCrop"/>
 
-
-
     </FrameLayout>
     <TextView
         android:lines="2"

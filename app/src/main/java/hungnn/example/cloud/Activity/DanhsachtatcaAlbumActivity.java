@@ -1,6 +1,7 @@
 package hungnn.example.cloud.Activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,6 +41,7 @@ public class DanhsachtatcaAlbumActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Album>> call, Response<List<Album>> response) {
                 ArrayList<Album> mangalbum= (ArrayList<Album>) response.body();
+//                Log.d("BBB", mangalbum.get(0).getTenAlbum());
                 allAlbumAdapter=new AllAlbumAdapter(DanhsachtatcaAlbumActivity.this, mangalbum);
                 recyclerViewAllalbum.setLayoutManager(new GridLayoutManager(DanhsachtatcaAlbumActivity.this, 2));
                 recyclerViewAllalbum.setAdapter(allAlbumAdapter);

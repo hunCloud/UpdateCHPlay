@@ -82,7 +82,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
             GetDataTheLoai(theLoai.getIdTheLoai());
         }
         if(album!=null&&!album.getTenAlbum().equals("")){
-            setValueInView(album.getTenAlbum(), album.getHinhAlbum());
+            setValueInView(album.getTenAlbum(), album.getHinhanhAlbum());
             GetDataAlbum(album.getIdAlbum());
         }
     }
