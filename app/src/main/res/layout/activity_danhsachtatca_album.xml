@@ -5,8 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg2"
     tools:context=".Activity.DanhsachtatcaAlbumActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+<!--    Fix display view all album "horizontal to vertical"-->
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"

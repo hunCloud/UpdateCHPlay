@@ -15,6 +15,7 @@
     <color name="bg_appbarlayoutsearchbaihat">#E91E63</color>
     <color name="bg_DanhsachcacplaylistActivity">#FFC107</color>
     <color name="bg_fargment_album_hot">#E91E63</color>
+    <color name="bg_fragment_playlist">#FFEA00</color>
     <!--    Text color-->
     <color name="textviewtitle">#000000</color>
     <color name="textviewtitleplaylist">#000000</color>
@@ -32,7 +33,7 @@
     <color name="textviewtendanhsachcacplaylist">#060606</color>
     <color name="textviewplaynhacindex">#D500F9</color>
     <color name="textviewplaynhactenbaihat">#FFEA00</color>
-    <color name="textviewplaynhactencasi">#D1C53A</color>
+    <color name="textviewplaynhactencasi">#BA3AD1</color>
     <color name="textviewtenplaylist">#F50978</color>
     <color name="textviewsearchtenbaihat">#F44336</color>
     <color name="textviewsearchtencasi">#2196F3</color>
