@@ -5,6 +5,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -42,6 +44,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class DanhsachbaihatActivity extends AppCompatActivity {
+
     Quangcao quangcao;
     ImageView imgdanhsachcakhuc;
 
@@ -57,10 +60,13 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
     TheLoai theLoai;
     Album album;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_danhsachbaihat);
+//        Toast.makeText(this, ""+MainActivity.getRandomBackground(),Toast.LENGTH_LONG).show();
+
         Toast.makeText(this, "Bấm vào biểu tượng con ong ở giữa để vào danh sách phát.\nHoặc chọn 1 bài để phát nhạc. \n\\icon tym", Toast.LENGTH_SHORT).show();
         StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -69,6 +75,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
 
         anhxa();
         init();
+        coordinatorLayout.setBackgroundResource(MainActivity.getRandomBackground());
         if(quangcao!=null&& !quangcao.getTenBaiHat().equals("")){
             setValueInView(quangcao.getTenBaiHat(), quangcao.getHinhBaiHat());
             GetDataQuangcao(quangcao.getIdQuangCao());

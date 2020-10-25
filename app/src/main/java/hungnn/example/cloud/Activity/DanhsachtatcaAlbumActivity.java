@@ -3,6 +3,7 @@ package hungnn.example.cloud.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -25,12 +26,15 @@ public class DanhsachtatcaAlbumActivity extends AppCompatActivity {
     RecyclerView recyclerViewAllalbum;
     Toolbar toolbaralbum;
     AllAlbumAdapter allAlbumAdapter;
+    LinearLayout linearLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_danhsachtatca_album);
         init();
+        linearLayout.setBackgroundResource(MainActivity.getRandomBackground());
         GetData();
     }
 
@@ -58,6 +62,7 @@ public class DanhsachtatcaAlbumActivity extends AppCompatActivity {
     private void init() {
         toolbaralbum=findViewById(R.id.toolbarallalbum);
         recyclerViewAllalbum=findViewById(R.id.recycleviewAllalbum);
+        linearLayout=findViewById(R.id.linearDanhsachtatcaalbum);
         setSupportActionBar(toolbaralbum);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("All albums");

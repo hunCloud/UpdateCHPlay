@@ -3,6 +3,7 @@ package hungnn.example.cloud.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -25,6 +26,7 @@ public class DanhsachcacplaylistActivity extends AppCompatActivity {
     Toolbar toolbar;
     RecyclerView recyclerViewdanhsachcacplaylist;
     DanhsachcacplaylistAdapter danhsachcacplaylistAdapter;
+    RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class DanhsachcacplaylistActivity extends AppCompatActivity {
         setContentView(R.layout.activity_danhsachcacplaylist);
         anhxa();
         init();
+        relativeLayout.setBackgroundResource(MainActivity.getRandomBackground());
         GetData();
     }
 
@@ -70,5 +73,6 @@ public class DanhsachcacplaylistActivity extends AppCompatActivity {
     private void anhxa() {
         toolbar=findViewById(R.id.toolbardanhsachcacplaylist);
         recyclerViewdanhsachcacplaylist=findViewById(R.id.recycleviewdanhsachcacplaylist);
+        relativeLayout=findViewById(R.id.relativeDanhsachcacplaylist);
     }
 }

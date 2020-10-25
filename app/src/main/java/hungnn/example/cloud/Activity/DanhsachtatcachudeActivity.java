@@ -3,6 +3,7 @@ package hungnn.example.cloud.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -25,12 +26,14 @@ public class DanhsachtatcachudeActivity extends AppCompatActivity {
     RecyclerView recyclerViewtatcacacchude;
     Toolbar toolbartatcachude;
     DanhsachtatcachudeAdapter danhsachtatcachudeAdapter;
+    LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_danhsachtatcachude);
         init();
+        linearLayout.setBackgroundResource(MainActivity.getRandomBackground());
         GetData();
     }
 
@@ -56,6 +59,7 @@ public class DanhsachtatcachudeActivity extends AppCompatActivity {
 
 
     private void init() {
+        linearLayout=findViewById(R.id.linearlayoutDanhsachtatcachude);
         recyclerViewtatcacacchude=findViewById(R.id.recyclerviewAllChude);
         toolbartatcachude=findViewById(R.id.toolbarallchude);
         setSupportActionBar(toolbartatcachude);
