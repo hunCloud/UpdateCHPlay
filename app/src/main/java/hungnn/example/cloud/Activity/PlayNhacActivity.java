@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.StrictMode;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -44,7 +45,7 @@ public class PlayNhacActivity extends AppCompatActivity {
     boolean checkrandom=false;
     boolean next=false;
 
-
+    LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,11 +60,13 @@ public class PlayNhacActivity extends AppCompatActivity {
 //        mediaPlayer=new MediaPlayer();
         GetDataFromIntent();
         init();
+        linearLayout.setBackgroundResource(MainActivity.getRandomBackground());
         eventClick();
 
 
     }
     private void init() {
+        linearLayout=findViewById(R.id.linearlayoutPlaynhac);
         toolbarplaynhac=findViewById(R.id.toolbarplaynhac);
         txtTotaltimesong=findViewById(R.id.textviewtotaltimesong);
         txtTimesong=findViewById(R.id.textviewtimesong);

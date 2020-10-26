@@ -14,7 +14,7 @@
             android:layout_margin="10dp"
             android:textColor="@color/textviewplaynhacindex"
             android:text="@string/one"
-            android:textSize="17sp"/>
+            android:textSize="20sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
             android:singleLine="true"
             android:text="@string/name_song"
             android:textColor="@color/textviewplaynhactenbaihat"
-            android:textSize="17sp"/>
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/textviewplaynhactencasi"
@@ -43,7 +43,7 @@
             android:singleLine="true"
             android:text="@string/singer_name"
             android:textColor="@color/textviewplaynhactencasi"
-            android:textSize="12sp" />
+            android:textSize="16sp" />
 
 
     </RelativeLayout>

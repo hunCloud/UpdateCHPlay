@@ -176,15 +176,15 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
     }
 
     private void setValueInView(String ten, String hinh) {
-        collapsingToolbarLayout.setTitle(ten);
+        collapsingToolbarLayout.setTitle("Album: "+ten);
 
             try {
                 URL url=new URL(hinh);
                 Bitmap bitmap= BitmapFactory.decodeStream(url.openConnection().getInputStream() );
                 BitmapDrawable bitmapDrawable=new BitmapDrawable(getResources(), bitmap);
                 if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.JELLY_BEAN){
-                    collapsingToolbarLayout.setBackground(bitmapDrawable);
-
+                    //collapsingToolbarLayout.setBackground(bitmapDrawable);
+                    collapsingToolbarLayout.setBackgroundResource(MainActivity.getRandomBackground());
                 }
             }catch (MalformedURLException e) {
                 e.printStackTrace();
@@ -221,7 +221,7 @@ public class DanhsachbaihatActivity extends AppCompatActivity {
         recyclerViewdanhsachbaihat=findViewById(R.id.recycleviewdanhsachbaihat);
         floatingActionButton=findViewById(R.id.floatingactionbutton);
         imgdanhsachcakhuc=findViewById(R.id.imageviewdanhsachcakhuc);
-        viewBackgroundPlaylist=findViewById(R.id.viewbackgroundplaylist); // fill image get from server and set it in view in activity_danhsachbaihat.xml
+        // viewBackgroundPlaylist=findViewById(R.id.viewbackgroundplaylist); // fill image get from server and set it in view in activity_danhsachbaihat.xml
     }
 
     private void DataIntent() {

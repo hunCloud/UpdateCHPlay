@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         makeArrayBackgrouund();
-        Toast.makeText(this, ""+MainActivity.getRandomBackground(),Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, ""+MainActivity.getRandomBackground(),Toast.LENGTH_LONG).show();
         Toast.makeText(this, "Chúc các bạn một ngày tốt lành.\nNghe nhạc vui vẻ.", Toast.LENGTH_SHORT).show();
         anhxa();
         init();

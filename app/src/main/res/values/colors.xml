@@ -27,13 +27,13 @@
     <color name="textviewtenallalbum">#060606</color>
     <color name="textviewcasibaihathot">#259988</color>
     <color name="textviewnoidung">#E91E63</color>
-    <color name="textviewtenbaihat">#030303</color>
-    <color name="textviewtencasi">#979797</color>
+    <color name="textviewtenbaihat">#FFFFFF</color>
+    <color name="textviewtencasi">#BB03DA</color>
     <color name="textviewxemthem">#F50057</color>
     <color name="textviewtendanhsachcacplaylist">#060606</color>
     <color name="textviewplaynhacindex">#D500F9</color>
     <color name="textviewplaynhactenbaihat">#FFEA00</color>
-    <color name="textviewplaynhactencasi">#BA3AD1</color>
+    <color name="textviewplaynhactencasi">#00E5FF</color>
     <color name="textviewtenplaylist">#F50978</color>
     <color name="textviewsearchtenbaihat">#F44336</color>
     <color name="textviewsearchtencasi">#2196F3</color>

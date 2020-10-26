@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import hungnn.example.cloud.Activity.MainActivity;
 import hungnn.example.cloud.Adapter.SearchBaiHatAdapter;
 import hungnn.example.cloud.Model.Baihat;
 import hungnn.example.cloud.Service.APIService;
@@ -43,6 +44,8 @@ public class Fragment_Tim_Kiem extends Fragment {
         view=inflater.inflate(R.layout.fragment_tim_kiem, container, false);
         toolbar=view.findViewById(R.id.toolbarsearchbaihat);
         recyclerViewsearchbaihat=view.findViewById(R.id.recycleviewsearchbaihat);
+
+        recyclerViewsearchbaihat.setBackgroundResource(MainActivity.getRandomBackground());
         txtkhongcodulieu=view.findViewById(R.id.textviewkhongcodulieu);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         toolbar.setTitle("Click search icon to find a song.");

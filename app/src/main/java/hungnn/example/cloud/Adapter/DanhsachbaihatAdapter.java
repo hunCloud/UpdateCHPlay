@@ -6,14 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import hungnn.example.cloud.Activity.MainActivity;
 import hungnn.example.cloud.Activity.PlayNhacActivity;
 import hungnn.example.cloud.Model.Baihat;
 import hungnn.example.cloud.Service.APIService;
@@ -46,6 +49,7 @@ public class DanhsachbaihatAdapter extends RecyclerView.Adapter<DanhsachbaihatAd
         holder.txtcasi.setText(baihat.getCasi());
         holder.txttenbaihat.setText(baihat.getTenbaihat());
         holder.txtindex.setText(position+1+"");
+        holder.relativeLayout.setBackgroundResource(MainActivity.getRandomBackground());
 
 
     }
@@ -58,6 +62,7 @@ public class DanhsachbaihatAdapter extends RecyclerView.Adapter<DanhsachbaihatAd
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView txtindex, txttenbaihat, txtcasi;
         ImageView imgluotthich;
+        RelativeLayout relativeLayout;
 
         public ViewHolder(View itemView){
             super(itemView);
@@ -65,7 +70,7 @@ public class DanhsachbaihatAdapter extends RecyclerView.Adapter<DanhsachbaihatAd
             txtindex=itemView.findViewById(R.id.textviewdanhsachindex);
             txttenbaihat=itemView.findViewById(R.id.textviewtenbaihat);
             imgluotthich=itemView.findViewById(R.id.imageviewluotthichdanhsachbaihat);
-
+            relativeLayout=itemView.findViewById(R.id.relativeDanhsachbaihat);
             imgluotthich.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
