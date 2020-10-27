@@ -13,30 +13,30 @@ android:layout_width="match_parent"
         >
         <fragment
             android:id="@+id/fragmentbanner"
-            android:name="hungnn.example.cloud.Fragment.Fragment_Banner"
+            android:name="hungnn.example.cloud.appnhac.Fragment.Fragment_Banner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="hungnn.example.cloud.Fragment.Fragment_Playlist"
+            android:name="hungnn.example.cloud.appnhac.Fragment.Fragment_Playlist"
             android:id="@+id/fragmentplaylist"/>
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="hungnn.example.cloud.Fragment.Fragment_ChuDe_TheLoai_ToDay"
+            android:name="hungnn.example.cloud.appnhac.Fragment.Fragment_ChuDe_TheLoai_ToDay"
             android:id="@+id/fragmentchudetheloai"/>
 
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="hungnn.example.cloud.Fragment.Fragment_Album_Hot"
+            android:name="hungnn.example.cloud.appnhac.Fragment.Fragment_Album_Hot"
             android:id="@+id/fragmentalbum"/>
 
         <fragment
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:name="hungnn.example.cloud.Fragment.Fragment_Bai_Hat_Hot"
+            android:name="hungnn.example.cloud.appnhac.Fragment.Fragment_Bai_Hat_Hot"
             android:id="@+id/fragmentbaihathot"/>
 
     </LinearLayout>

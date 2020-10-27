@@ -1,7 +1,7 @@
 <resources>
 
 <!--Display-->
-    <string name="app_name">Hung music</string>
+    <string name="app_name">Hung Music </string>
     <string name="hot_playlist">Hot playlists in month</string>
     <string name="more_playlist">More playlists</string>
     <string name="album_hot">Album hot</string>

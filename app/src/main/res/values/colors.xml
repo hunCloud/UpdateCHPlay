@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#00E5FF</color>
+    <color name="colorPrimaryDark">#C6FF00</color>
+    <color name="colorAccent">#FF1744</color>
     <!--    Color-->
 <!--    CircleImageView-->
     <color name="imageviewcircle">#000</color>
@@ -31,9 +31,9 @@
     <color name="textviewtencasi">#BB03DA</color>
     <color name="textviewxemthem">#F50057</color>
     <color name="textviewtendanhsachcacplaylist">#060606</color>
-    <color name="textviewplaynhacindex">#D500F9</color>
+    <color name="textviewplaynhacindex">#00E5FF</color>
     <color name="textviewplaynhactenbaihat">#FFEA00</color>
-    <color name="textviewplaynhactencasi">#00E5FF</color>
+    <color name="textviewplaynhactencasi">#FF3D00</color>
     <color name="textviewtenplaylist">#F50978</color>
     <color name="textviewsearchtenbaihat">#F44336</color>
     <color name="textviewsearchtencasi">#2196F3</color>
